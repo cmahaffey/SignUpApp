@@ -1,0 +1,74 @@
+body{
+  font-family: serif;
+  background-image: url("http://www.desktopaper.com/wp-content/uploads/artistic-wallpaper-line-band-dark.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: rgb(225, 225, 225);
+}
+
+.warning{
+  color: rgba(255, 0, 0, 0.0);;
+  margin:0;
+}
+
+.form{
+  background-color: rgba(0, 0, 0, 0.0);;
+  width: 350px;
+  height: 250px;
+  margin: auto;
+  margin-top: 25vh;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5%;
+  box-sizing: border-box;
+  border: solid 2px silver;
+
+}
+form{
+  opacity: 1;
+}
+.create-subscriber{
+  margin-top: 23px;
+}
+.input-field{
+  display: block;
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+}
+button,
+input[type=submit]{
+  border-width: 2px;
+  color: rgb(245, 245, 245);
+  margin-bottom: 5px;
+}
+
+input[type=submit]:active,
+input[type=submit]:link,
+input[type=submit]:focus{
+  color: rgb(245, 245, 245);
+  margin-bottom: 5px;
+}
+
+button:hover,
+input[type=submit]:hover{
+  color: rgb(185,185, 185);
+}
+#all-subscribers{
+  margin-bottom: 10px;
+}
+
+#all-subscribers h5,
+button{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+button{
+  padding: 0;
+  line-height: 0;
+  height: 2em;
+}

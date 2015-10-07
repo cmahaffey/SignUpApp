@@ -23,6 +23,6 @@ get '/api/subscribers' do
   @subscribers.to_json
 end
 
-delete '/:id' do
-  Subscriber.delete(params[:subscriber])
+delete '/api/subscribers/:id' do
+  Subscriber.destroy(params[:id])
 end

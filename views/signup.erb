@@ -1,9 +1,14 @@
-
+<div class="form">
+  <h1>Sign Up</h1>
   <form class="create-subscriber" action="/api/subscribers" method="post">
-    <input type="text" name="subscriber[name]" placeholder="name">
-    <input class='email-input'type="text" name="subscriber[email]" placeholder="email">
-    <input type="submit">
+    <input class="input-field" type="text" name="subscriber[name]" placeholder="name">
+    <input class='email-input input-field'type="text" name="subscriber[email]" placeholder="email">
+    <h6 class="warning">Not a valid email</h6>
+    <input class="submit-field" type="submit">
+
   </form>
+</div>
+
 
 <div id="all-subscribers">
 

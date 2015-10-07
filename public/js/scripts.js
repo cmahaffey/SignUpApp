@@ -53,7 +53,7 @@ app.SubscriberListView=Backbone.View.extend({
        this.$el.append($view.$el)
     }
   }
-})
+});
 
 
 
@@ -67,16 +67,20 @@ app.subscribers.fetch();
 
 $('.create-subscriber').on('submit', function(e){
   e.preventDefault();
-  mailCheck=/^\w+([\.]\w+)+@\w+(\.)\w{2,3}$/
+  mailCheck=/.+@\w+[\.\w].\w+\.\w+/i
   email=$('.email-input').val()
+  console.log(email.match(mailCheck));
   if (email.match(mailCheck)){
-    $('.email-input').css({'border-color':'green'});
+    $('.email-input').css({'border':'green 2px solid'});
+
     e.preventDefault();
     var data=$(this).serializeJSON();
     // console.log(data.subscriber);
     app.subscribers.create(data.subscriber);
   }else{
-    $('.email-input').css({'border-color':'red'});
+    $('.email-input').css({'border':'red 2px solid'});
+    $('.warning').css({'color':'rgba(255,0,0,1.0)'});
+    $('.email-input').val()=''
   }
 
-})
+});
