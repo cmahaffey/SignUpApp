@@ -2,3 +2,8 @@ development:
   adapter: postgresql
   encoding: utf8
   database: signUp
+
+production:
+    adapter: postgresql
+    encoding: utf8
+    database: signUp
